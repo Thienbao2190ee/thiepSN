@@ -1,0 +1,38 @@
+body {
+  background-color: #fde7f9;
+background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
+margin:  0;
+font-family:monospace;
+}
+#root{
+  width: 100%;
+}
+.animate_tranlay{
+  z-index: 3;
+  animation: animate_tranlay 2s cubic-bezier(0, 0, 0.2, 1);
+  transform: scale(1.05);
+  top: 10%;
+}
+@keyframes animate_tranlay {
+    0%{
+      z-index: 0;
+      top: 13%;
+  transform: scale(0.8);
+
+    }
+    50%{
+      z-index: 0;
+      top: 75%;
+  transform: scale(0.9);
+      
+    }
+    51%{
+      z-index: 3;
+    }
+    100%{
+      z-index: 3;
+      top: 10%;
+  transform: scale(1.05);
+
+    }
+}
