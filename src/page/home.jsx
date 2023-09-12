@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useNavigation } from "react-router-dom";
+// import { useNavigate, useNavigation } from "react-router-dom";
 
-function Home() {
+function Home({nextPage}) {
     const [showTask ,setShowTask] = useState(false)
     const [name,setName] = useState('')
-    const navigates = useNavigate()
+    // const navigates = useNavigate()
 
     useEffect(()=>{
         const currentURL = new URL(window.location.href);
@@ -31,7 +31,14 @@ function Home() {
                         <p className="font-bold text-black">Chủ nhật ngày 24 tháng 9 📌📌</p>
                         <p className="font-bold text-black">Địa chỉ tại Nhà Me 🤧🤧</p>
                         <div className="card-actions flex justify-end">
-                            <button className="btn btn-primary" onClick={()=> navigates('/map')} style={{outline:'none'}}>Map</button>
+                            <button 
+                                className="btn btn-primary" 
+                                // onClick={()=> navigates('/map')} 
+                                onClick={()=> nextPage()}
+                                style={{outline:'none'}}
+                            >
+                                Map
+                            </button>
                         </div>
                     </div>
                 </div>

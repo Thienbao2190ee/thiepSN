@@ -1,22 +1,29 @@
 import { useState } from 'react'
-
 import './App.css'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './page/home'
 import Map from './page/map'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [show, setShow] = useState(false)
+  const nextPage = () => {
+    setShow(true)
+  }
 
   return (
     <>
-      <BrowserRouter>
-          {/* <Home /> */}
-          <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/map' element={<Map/>} />
-          </Routes>
-      </BrowserRouter>
+      {show ? 
+        <Map /> : 
+        <Home nextPage={nextPage} /> }
+        
+
+
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/map" element={<Map />} />
+        </Routes>
+      </BrowserRouter> */}
     </>
   )
 }
