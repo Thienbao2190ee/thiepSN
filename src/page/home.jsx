@@ -55,7 +55,7 @@ function Home({nextPage}) {
                 </figure>
                 <div className="card-body items-center text-center" style={{paddingTop:0}}>
                     <h2 className="card-title text-black font-bold">Thiệp mời <br/>tiệc sinh nhật</h2>
-                    <p>Mời bạn <text className="text-rose-500">{name}</text>, đến tham dự cùng với Thiên Bảo</p>
+                    <p>Mời <text className="text-rose-500">{name}</text>, đến tham dự cùng với Thiên Bảo</p>
                     <div className="card-actions">
                     {/* <button className="btn btn-primary " onClick={()=> setShowTask(true)}  style={{outline:'none'}}>Tham gia</button>
                      */}
