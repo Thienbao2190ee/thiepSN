@@ -31,15 +31,15 @@ function Home({nextPage}) {
                     <div className="card-body text-center">
                         <h2 className="card-title text-black">Vào lúc 6h ⏰</h2>
                         <p className="font-bold text-black">Chủ nhật ngày 24 tháng 9 📌📌</p>
-                        <p className="font-bold text-black">Địa chỉ tại Nhà Me 🤧🤧</p>
+                        <p className="font-bold text-black">Địa chỉ tại Nhà me 🤧🤧</p>
                         <div className="card-actions flex justify-end">
                             <button 
-                                className="btn btn-primary" 
+                                className="buttonNext" 
                                 // onClick={()=> navigates('/map')} 
                                 onClick={()=> nextPage()}
                                 style={{outline:'none'}}
                             >
-                                Map
+                                Đường đi
                             </button>
                         </div>
                     </div>
@@ -57,7 +57,11 @@ function Home({nextPage}) {
                     <h2 className="card-title text-black font-bold">Thiệp mời <br/>tiệc sinh nhật</h2>
                     <p>Mời bạn <text className="text-rose-500">{name}</text>, đến tham dự cùng với Thiên Bảo</p>
                     <div className="card-actions">
-                    <button className="btn btn-primary font-bold" onClick={()=> setShowTask(true)}  style={{outline:'none'}}>Tham gia</button>
+                    {/* <button className="btn btn-primary " onClick={()=> setShowTask(true)}  style={{outline:'none'}}>Tham gia</button>
+                     */}
+                     <button onClick={()=> setShowTask(true)} className="buttonNext">
+                        Tham gia
+                    </button>   
                     </div>
                 </div>
             </div>
