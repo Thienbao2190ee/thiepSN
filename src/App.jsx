@@ -9,6 +9,7 @@ function App() {
   const nextPage = () => {
     setShow(true)
   }
+  document.title = 'Bảo React Vite'
 
   return (
     <>
