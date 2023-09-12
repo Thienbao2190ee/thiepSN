@@ -23,7 +23,7 @@ function Home({nextPage}) {
                         <p>Cùng ăn bánh và thổi nến nhé !</p>
                     </div>
                     <div className="pl-3 w-[80%]">
-                        <img src="./sinhnhat.png" alt="" />
+                        <img src="./thiepSN/sinhnhat.png" alt="" />
                     </div>
                     
                     <div className="card-body text-center">
@@ -47,7 +47,7 @@ function Home({nextPage}) {
         <div className="absolute w-full top-[10%]">
             <div className="card w-[90%] mx-auto bg-white shadow-xl">
                 <figure className="pt-5 ">
-                    <img src="/thupng.png"  alt="Shoes" className="rounded-xl w-[80%]" />
+                    <img src="./thiepSN/thupng.png"  alt="Shoes" className="rounded-xl w-[80%]" />
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title text-black font-bold">Thiệp mời <br/>tiệc sinh nhật</h2>
