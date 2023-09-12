@@ -43,7 +43,7 @@ function Home() {
                     <img src="/thupng.png"  alt="Shoes" className="rounded-xl w-[80%]" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title text-black font-bold">Thiệp mời<br/> tiệc sinh nhật</h2>
+                    <h2 className="card-title text-black font-bold">Thiệp mời <br/>tiệc sinh nhật</h2>
                     <p>Mời bạn <text className="text-rose-500">{name}</text>, đến tham dự cùng với Thiên Bảo</p>
                     <div className="card-actions">
                     <button className="btn btn-primary font-bold" onClick={()=> setShowTask(true)}  style={{outline:'none'}}>Tham gia</button>
